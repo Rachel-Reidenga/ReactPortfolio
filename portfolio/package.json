@@ -4,41 +4,80 @@
   "private": true,
   "homepage": "https://github.com/Rachel-Reidenga/ReactPortfolio/",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
-    "node-sass": "^4.12.0",
-    "normalize.css": "^8.0.1",
-    "popper.js": "^1.15.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "react-typed": "^1.1.2"
+    "@babel/core": "^7.14.2",
+    "@babel/parser": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.19",
+    "@fortawesome/free-brands-svg-icons": "^5.9.0",
+    "@fortawesome/free-solid-svg-icons": "^5.9.0",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "@zeit/next-css": "^1.0.1",
+    "api-nodejs-docs": "^1.0.36",
+    "express": "^4.16.4",
+    "mkdirt": "^1.0.0",
+    "next": "^8.0.3",
+    "nodeenv": "^3.0.55",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-favicon": "0.0.14",
+    "webpack": "^4.29.6"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "dev": "NODE_ENV=development nodemon server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "heroku-postbuild": "./node_modules/next/dist/bin/next build"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "globals": {
+      "window": true,
+      "document": true
+    },
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "rules": {
+      "react/jsx-wrap-multilines": 0,
+      "react/jsx-one-expression-per-line": 0,
+      "react/no-array-index-key": 0,
+      "react/react-in-jsx-scope": 0,
+      "react/no-unescaped-entities": 0,
+      "import/no-named-as-default": 0,
+      "import/no-named-as-default-member": 0,
+      "import/no-extraneous-dependencies": 0,
+      "import/newline-after-import": 0,
+      "jsx-a11y/click-events-have-key-events": 0,
+      "jsx-a11y/no-static-element-interactions": 0,
+      "jsx-a11y/no-noninteractive-element-interactions": 0,
+      "jsx-a11y/anchor-is-valid": 0,
+      "jsx-a11y/label-has-for": 0,
+      "consistent-return": 0,
+      "global-require": 0,
+      "max-len": 0,
+      "operator-linebreak": 0,
+      "prefer-template": 0,
+      "no-underscore-dangle": 0,
+      "no-useless-escape": 0,
+      "no-unused-expressions": 0,
+      "no-cond-assign": 0,
+      "no-plusplus": 0,
+      "no-await-in-loop": 0,
+      "no-prototype-builtins": 0,
+      "no-param-reassign": 0,
+      "no-shadow": 0
+    }
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "chai": "^4.2.0",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-react-app": "^3.0.8",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.12.4",
+    "mocha": "^6.2.3",
+    "nightmare": "^3.0.1",
+    "react-scripts": "^3.0.1"
   }
 }

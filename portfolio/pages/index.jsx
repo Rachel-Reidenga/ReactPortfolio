@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar from '../components/navbar';
-import Jumbotron from '../components/jumbotron';
-import Picture from '../components/picture';
-import Footer from '../components/footer';
+import Navbar from '../src/components/navbar';
+import Jumbotron from './jumbotron';
+import Picture from './picture';
+import Footer from './footer';
 import '../static/css/pages.css';
 
 const Home = () => (

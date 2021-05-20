@@ -4,13 +4,12 @@ import ProjectCard from "./ProjectCards";
 import BlogCard from "./BlogsCards";
 import Particle from "../Particle";
 
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.jpeg";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import algo from "../../Assets/Projects/algo.png";
-import plant from "../../Assets/Projects/plant.jpeg";
+import donniedarko from "../../Assets/Projects/donnie-drr.JPG";
+import passwordgen from "../../Assets/Projects/password-gen.png";
+import lunamoth from "../../Assets/Projects/luna-mothrr.png";
+import fish from "../../Assets/Projects/fishu-fishrr.png";
+import scheduler from "../../Assets/Projects/scheduler.png";
+import logo from "../../Assets/logo.jpg";
 
 function Projects() {
   return (
@@ -26,7 +25,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={donniedarko}
               isBlog={false}
               title="Donnie Darko"
               description="Donnie Darko ink and water color fan art."
@@ -36,7 +35,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={fish}
               isBlog={false}
               title="Fishu Fish"
               description="Wiggly Gold Fish in ink and water color."
@@ -46,7 +45,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={lunamoth}
               isBlog={false}
               title="Luna Moth"
               description="Luna Moth Ink and water color painting."
@@ -56,7 +55,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={passwordgen}
               isBlog={false}
               title="Password Generator"
               description="Password Generator."
@@ -66,7 +65,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={scheduler}
               isBlog={false}
               title="Scheduler"
               description="Scheduler, planner."
@@ -81,7 +80,7 @@ function Projects() {
         <Row style={{ justifyContent: "center" }}>
           <Col md={4} className="blog-card">
             <BlogCard
-              imgPath={algo}
+              imgPath={logo}
               link=""
               title="Blog Title"
               site="gitbook.com"
@@ -89,7 +88,7 @@ function Projects() {
           </Col>
           <Col md={4} className="blog-card">
             <BlogCard
-              imgPath={plant}
+              imgPath={donniedarko}
               link="https://Rachel-Reidenga/"
               title="Fishu Fish"
               site="rachelr.com"

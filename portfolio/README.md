@@ -12,24 +12,24 @@
 
 ## Link to React Portfolio
 
-[Protfolio](https://)
+[Protfolio](https://rachel-reidenga.github.io/ReactPortfolio/)
 
 
 ## Images
 
-![Header](../Images/header.png)
+![Header](./Images/header.png)
 
-![Hello](../Images/hello.png)
+![Hello](./Images/hello.png)
 
-![Who](../Images/who.png)
+![Who](./Images/who.png)
 
-![Projects](../Images/projects.png)
+![Projects](./Images/projects.png)
 
-![AboutMe](../Images/aboutme.png)
+![AboutMe](./Images/aboutme.png)
 
-![Contact](../Images/contact.png)
+![Contact](./Images/contact.png)
 
-![Blog](../Images/blog.png)
+![Blog](./Images/blog.png)
   
 
 
